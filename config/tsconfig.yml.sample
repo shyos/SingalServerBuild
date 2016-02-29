@@ -1,7 +1,7 @@
 twilio:
   accountId: a
   accountToken: a
-  numbers: [1]
+  number: [1]
   localDomain: a
 
 push:

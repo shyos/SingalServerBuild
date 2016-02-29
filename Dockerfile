@@ -1,24 +1,26 @@
-# Open Whisper Systems TextSecure Server
-
-# Build the image with
-# docker build --rm -t whisper .
-
-# Run the container in a directory containing the jar/ and config/ dirs
-# and the scripts referenced here
-#
-# docker run -p 8080:8080 -p 8081:8081 -P -v $(pwd):/home/whisper -it whisper
-
 FROM ubuntu:15.10
 
 MAINTAINER Jani Monoses <jani@ubuntu.com>
 
-RUN DEBIAN_FRONTEND='noninteractive' apt-get update && apt-get install -y sudo redis-server postgresql openjdk-7-jre-headless supervisor
+RUN apt-get update && \
+  apt-get install -y redis-server postgresql \
+  python-software-properties supervisor software-properties-common sudo
+
+RUN add-apt-repository -y ppa:webupd8team/java
+
+RUN echo "oracle-java7-unlimited-jce-policy shared/accepted-oracle-license-v1-1 select true" | debconf-set-selections
+
+RUN apt-get update && apt-get install -y oracle-java7-unlimited-jce-policy git maven
 
 RUN adduser --disabled-password --quiet --gecos Whisper whisper
 ENV HOME /home/whisper
+ENV JAVA_HOME /usr/lib/jvm/java-7-oracle
 WORKDIR /home/whisper
 
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+COPY config /home/whisper/
+COPY jar/ /home/whisper
+COPY run-server.sh /home/whisper
 
 RUN /etc/init.d/postgresql start && \
  sudo -u postgres psql --command "CREATE USER whisper WITH SUPERUSER PASSWORD 'whisper';" && \
@@ -27,4 +29,6 @@ RUN /etc/init.d/postgresql start && \
 
 EXPOSE 8080 8081
 
-CMD ./run-server
+VOLUME /home/whisper/config
+
+CMD ./run-server.sh

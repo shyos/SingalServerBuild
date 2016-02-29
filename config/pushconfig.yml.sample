@@ -1,7 +1,6 @@
 gcm:
   senderId: 111111111111
   apiKey: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-  redphoneApiKey: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
 apn:
   pushCertificate: Cdsjalfksjdlfkjsdlfksdlfkjsdfkjas
@@ -24,4 +23,3 @@ server:
     adminConnectors:
     - type: http
       port: 9091
-
