@@ -1,2 +1,3 @@
 config/pushconfig.yml
 config/tsconfig.yml
+.DS_Store

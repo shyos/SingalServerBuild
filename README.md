@@ -21,10 +21,10 @@ docker run -d -p 8080:8080 -p 8081:8081 -v <your configs>:/home/whisper/config t
 
 Required services to be configured:
 
-- Twilio: for sms broadcasting(for registration in TextServer),
-- AWS S3: for documents in TextSecure,
-- Google developer: for push notifications,
-- Apple Developer: for push notifications
+- Twilio: for sms broadcasting(for registration in TextServer). **Required to start the TextSecure Server.**
+- AWS S3: for documents in TextSecure. **Required to start the TextSecure Server.**
+- Google developer: for push notifications. **Required to start the PushServer Service.**
+- Apple Developer: for push notifications. **Required to start the PushServer Service.**
 
 
 ### Using https
