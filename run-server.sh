@@ -4,7 +4,7 @@
 supervisord
 
 #Start push server in the background
-sudo -u whisper java -jar Push-Server-*-capsule-fat.jar server config/pushconfig.yml &
+sudo -u whisper java -jar Push-Server-0.9.8-capsule-fat.jar server config/pushconfig.yml &
 
 #Wait until push server is running
 sleep 5

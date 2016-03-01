@@ -19,7 +19,7 @@ WORKDIR /home/whisper
 
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 COPY config /home/whisper/
-COPY jar/ /home/whisper
+COPY jar/ /home/whisper/
 COPY run-server.sh /home/whisper
 
 RUN /etc/init.d/postgresql start && \
@@ -30,5 +30,6 @@ RUN /etc/init.d/postgresql start && \
 EXPOSE 8080 8081
 
 VOLUME /home/whisper/config
+VOLUME /home/whisper/certs
 
 CMD ./run-server.sh
