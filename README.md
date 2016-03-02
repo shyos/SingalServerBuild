@@ -57,3 +57,7 @@ openssl pkcs12 -in archive.p12 -nocerts -out private_key.pem
 openssl rsa -in private_key.pem -out private_key.rsa.pem
 
 ```
+
+**Rename the generated key and certificate so that the prefix match your appId Name**
+I.E. if the id of your app is `com.example.MyApp` the name of the certificates and key files
+should be `MyAppWhateverYouWantKey.pem`.
