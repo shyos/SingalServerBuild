@@ -1,0 +1,27 @@
+gcm:
+  senderId: 944233091864
+  apiKey:  AIzaSyAV3j9TqBLaX7DezaAKZ6cYXiXuZplA4PE
+  redphoneApiKey: empty
+  xmpp: false
+apn:
+  feedback: false
+  pushCertificate: Cdsjalfksjdlfkjsdlfksdlfkjsdfkjas
+  pushKey: Ksflskdjfalsdkfjslkfslkfslkgslgkj
+  voipCertificate: Cdsjalfksjdlfkjsdlfksdlfkjsdfkjas
+  voipKey: Ksflskdjfalsdkfjslkfslkfslkgslgkj
+
+redis:
+  url: http://127.0.0.1:6379
+
+authentication:
+  servers:
+  -  name: "user"
+     password: "password"
+
+server:
+    applicationConnectors:
+    - type: http
+      port: 9090
+    adminConnectors:
+    - type: http
+      port: 9091

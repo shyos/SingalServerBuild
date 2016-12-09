@@ -1,0 +1,44 @@
+2016-11-22 06:07:29,455 CRIT Supervisor running as root (no user in config file)
+2016-11-22 06:07:29,457 INFO daemonizing the supervisord process
+2016-11-22 06:07:29,457 INFO supervisord started with pid 10
+2016-11-22 06:07:30,459 INFO spawned: 'redis' with pid 14
+2016-11-22 06:07:30,459 INFO spawnerr: can't find command '/usr/bin/memcached'
+2016-11-22 06:07:30,459 INFO spawnerr: can't find command '/usr/lib/postgresql/9.4/bin/postgres'
+2016-11-22 06:07:31,463 INFO success: redis entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-22 06:07:31,463 INFO spawnerr: can't find command '/usr/bin/memcached'
+2016-11-22 06:07:31,464 INFO spawnerr: can't find command '/usr/lib/postgresql/9.4/bin/postgres'
+2016-11-22 06:07:33,466 INFO spawnerr: can't find command '/usr/bin/memcached'
+2016-11-22 06:07:33,466 INFO spawnerr: can't find command '/usr/lib/postgresql/9.4/bin/postgres'
+2016-11-22 06:08:02,930 CRIT Supervisor running as root (no user in config file)
+2016-11-22 06:08:02,931 INFO daemonizing the supervisord process
+2016-11-22 06:08:02,932 INFO supervisord started with pid 10
+2016-11-22 06:08:03,933 INFO spawned: 'redis' with pid 14
+2016-11-22 06:08:03,934 INFO spawnerr: can't find command '/usr/bin/memcached'
+2016-11-22 06:08:03,934 INFO spawnerr: can't find command '/usr/lib/postgresql/9.4/bin/postgres'
+2016-11-22 06:08:04,938 INFO success: redis entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-22 06:08:04,938 INFO spawnerr: can't find command '/usr/bin/memcached'
+2016-11-22 06:08:04,938 INFO spawnerr: can't find command '/usr/lib/postgresql/9.4/bin/postgres'
+2016-11-22 06:08:06,941 INFO spawnerr: can't find command '/usr/bin/memcached'
+2016-11-22 06:08:06,941 INFO spawnerr: can't find command '/usr/lib/postgresql/9.4/bin/postgres'
+2016-11-22 06:08:51,581 CRIT Supervisor running as root (no user in config file)
+2016-11-22 06:08:51,582 INFO daemonizing the supervisord process
+2016-11-22 06:08:51,583 INFO supervisord started with pid 10
+2016-11-22 06:08:52,584 INFO spawned: 'redis' with pid 14
+2016-11-22 06:08:52,585 INFO spawnerr: can't find command '/usr/bin/memcached'
+2016-11-22 06:08:52,585 INFO spawnerr: can't find command '/usr/lib/postgresql/9.4/bin/postgres'
+2016-11-22 06:08:53,589 INFO success: redis entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-22 06:08:53,589 INFO spawnerr: can't find command '/usr/bin/memcached'
+2016-11-22 06:08:53,589 INFO spawnerr: can't find command '/usr/lib/postgresql/9.4/bin/postgres'
+2016-11-22 06:08:55,591 INFO spawnerr: can't find command '/usr/bin/memcached'
+2016-11-22 06:08:55,591 INFO spawnerr: can't find command '/usr/lib/postgresql/9.4/bin/postgres'
+2016-11-22 06:10:33,819 CRIT Supervisor running as root (no user in config file)
+2016-11-22 06:10:33,821 INFO daemonizing the supervisord process
+2016-11-22 06:10:33,821 INFO supervisord started with pid 10
+2016-11-22 06:10:34,823 INFO spawned: 'redis' with pid 14
+2016-11-22 06:10:34,823 INFO spawnerr: can't find command '/usr/bin/memcached'
+2016-11-22 06:10:34,823 INFO spawnerr: can't find command '/usr/lib/postgresql/9.4/bin/postgres'
+2016-11-22 06:10:35,828 INFO success: redis entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-11-22 06:10:35,828 INFO spawnerr: can't find command '/usr/bin/memcached'
+2016-11-22 06:10:35,828 INFO spawnerr: can't find command '/usr/lib/postgresql/9.4/bin/postgres'
+2016-11-22 06:10:37,830 INFO spawnerr: can't find command '/usr/bin/memcached'
+2016-11-22 06:10:37,831 INFO spawnerr: can't find command '/usr/lib/postgresql/9.4/bin/postgres'
