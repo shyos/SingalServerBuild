@@ -31,3 +31,8 @@ openssl pkcs12 -export -password pass:example -in whisper.crt -inkey whisper.key
 
 # Import the host key and certificate to Java keystore format, so it can be used by dropwizard
 keytool -importkeystore -srcstoretype PKCS12 -srckeystore keystore.p12 -srcstorepass example -destkeystore example.keystore -deststorepass example
+
+#whisper.store bust be placed into  Android client
+keytool -importcert -v -trustcacerts -file whisper.crt -alias IntermediateCA -keystore whisper.store  -providerpath ~/local/bcprov-jdk15on-155.jar -provider org.bouncycastle.jce.provider.BouncyCastleProvider -storetype BKS -storepass whisper
+
+

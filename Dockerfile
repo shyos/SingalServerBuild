@@ -1,12 +1,8 @@
-FROM ubuntu:15.10
-
-MAINTAINER Jani Monoses <jani@ubuntu.com>
+FROM ubuntu:14.04
 
 RUN apt-get update && \
   apt-get install -y redis-server postgresql \
   python-software-properties supervisor software-properties-common sudo
-
-RUN add-apt-repository -y ppa:webupd8team/java
 
 RUN echo "oracle-java7-unlimited-jce-policy shared/accepted-oracle-license-v1-1 select true" | debconf-set-selections
 
@@ -19,6 +15,7 @@ WORKDIR /home/whisper
 
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 COPY config /home/whisper/
+COPY config/ /home/whisper/config
 COPY jar/ /home/whisper/
 COPY run-server.sh /home/whisper
 
@@ -27,7 +24,7 @@ RUN /etc/init.d/postgresql start && \
  sudo -u postgres createdb -O whisper accountdb && \
  sudo -u postgres createdb -O whisper messagedb
 
-EXPOSE 8080 8081
+EXPOSE 8080 8081 5432
 
 VOLUME /home/whisper/config
 VOLUME /home/whisper/certs
